@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Minérale - Histoire Industrielle</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation principale -->
+    <nav class="nav-container">
+        <ul class="nav-links">
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#process">Processus</a></li>
+            <li><a href="#histoire">Histoire</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#memorium" class="memorium-btn">Memorium<span class="pulse-dot"></span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero-parallax" id="concept">
+        <div class="banner-container">
+            <img src="photos/Rendu projet/book-nook-4.jpg" alt="Photo Bannière" class="banner-image">
+            <div class="green-filter"></div>
+            <div class="hero-title">
+                <h1>MAISON MINÉRALE</h1>
+                <p>L'âme industrielle de Saint-Étienne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Équipe -->
+    <section class="team-section section-dark" id="process">
+        <div class="section-inner">
+            <h2 class="section-title">Notre Équipe Créative</h2>
+
+            <div class="polaroid-grid">
+                <div class="polaroid-card">
+                    <div class="polaroid-frame">
+                        <img src="images/polaroid/selma.jpg" alt="Selma">
+                        <div class="polaroid-label">Design Industriel</div>
+                    </div>
+                    <h3>Selma</h3>
+                </div>
+
+                <div class="polaroid-card">
+                    <div class="polaroid-frame">
+                        <img src="images/polaroid/zorha.jpg" alt="Zorha">
+                        <div class="polaroid-label">Direction Artistique</div>
+                    </div>
+                    <h3>Zorha</h3>
+                </div>
+
+                <div class="polaroid-card">
+                    <div class="polaroid-frame">
+                        <img src="images/polaroid/louna.jpg" alt="Louna">
+                        <div class="polaroid-label">Ingénierie Matériaux</div>
+                    </div>
+                    <h3>Louna</h3>
+                </div>
+
+                <div class="polaroid-card">
+                    <div class="polaroid-frame">
+                        <img src="images/polaroid/melany.jpg" alt="Mélany">
+                        <div class="polaroid-label">Systèmes Lumineux</div>
+                    </div>
+                    <h3>Mélany</h3>
+                </div>
+
+                <div class="polaroid-card">
+                    <div class="polaroid-frame">
+                        <img src="images/polaroid/viktor.jpg" alt="Viktor">
+                        <div class="polaroid-label">Fabrication numérique</div>
+                    </div>
+                    <h3>Viktor</h3>
+                </div>
+            </div>
+
+            <!-- Étapes de conception -->
+            <div class="process-steps">
+                <h3>Notre Feuille de Route</h3>
+                <div class="steps-container">
+                    <div class="step workshop-day">
+                        <div class="step-number">24 mars</div>
+                        <img src="photos/brainstorming.jpeg" alt="Phase d'idéation">
+                        <h4>Jour 1 - Émergence</h4>
+                        <ul class="step-details">
+                            <li>Présentation du workshop</li>
+                            <li>Brainstorming collectif</li>
+                            <li>Validation du concept BookNook</li>
+                            <li>Croquis initiaux</li>
+                        </ul>
+                    </div>
+
+                    <div class="step workshop-day">
+                        <div class="step-number">25 mars</div>
+                        <img src="photos/croquis-2.png" alt="Conception numérique">
+                        <h4>Jour 2 - Digitalisation</h4>
+                        <ul class="step-details">
+                            <li>Modélisation sur Illustrator</li>
+                            <li>Création de l'affiche A3</li>
+                            <li>Ébauche du livret A5</li>
+                            <li>Prototypage numérique</li>
+                        </ul>
+                    </div>
+
+                    <div class="step workshop-day">
+                        <div class="step-number">26 mars</div>
+                        <img src="photos/decoupe.png" alt="Fabrication laser">
+                        <h4>Jour 3 - Fabrication</h4>
+                        <ul class="step-details">
+                            <li>Découpe laser chez LD Workshop</li>
+                            <li>Gravure Galvo des détails</li>
+                            <li>Test d'assemblage</li>
+                            <li>Intégration LED</li>
+                        </ul>
+                    </div>
+
+                    <div class="step workshop-day">
+                        <div class="step-number">27 mars</div>
+                        <img src="photos/day4.jpg" alt="Présentation finale">
+                        <h4>Jour 4 - Finalisation</h4>
+                        <ul class="step-details">
+                            <li>Montage définitif</li>
+                            <li>Photographie produit</li>
+                            <li>Préparation vernissage</li>
+                            <li>Présentation publique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quotes-cloud">
+                <!-- Point haut gauche du W -->
+                <div class="quote-tag" style="transform: rotate(-8deg); left: 5%; top: 10%;">
+                    <p>"Cinq personnalités, une seule boîte - l'alchimie improbable qui a tout changé"</p>
+                </div>
+
+                <!-- Point bas gauche du W -->
+                <div class="quote-tag" style="transform: rotate(-3deg); left: 15%; top: 60%;">
+                    <p>"Une âme dans une boîte... comment faire plus fascinant ?"</p>
+                </div>
+
+                <!-- Centre du W -->
+                <div class="quote-tag" style="transform: rotate(5deg); left: 50%; top: 40%; translate: -50% 0;">
+                    <p>"Tout comme un livre, il peut renfermer une histoire forte et propre à chacun."</p>
+                </div>
+
+                <!-- Point haut droit du W -->
+                <div class="quote-tag" style="transform: rotate(10deg); right: 5%; top: 15%;">
+                    <p>"J'aime l'idée de pouvoir physiquement appuyer sa culture sur un morceau de Saint-Étienne."</p>
+                </div>
+
+                <!-- Point bas droit du W -->
+                <div class="quote-tag" style="transform: rotate(-5deg); right: 10%; top: 65%;">
+                    <p>"Notre objet est un passeur de mémoire entre générations."</p>
+                </div>
+            </div>
+
+            <!-- Citation -->
+            <blockquote class="process-quote">
+                "De la poussière d'archives à l'objet tangible, chaque étape est un dialogue entre mémoire et
+                modernité."
+                <cite>- L'Équipe Maison Minérale</cite>
+            </blockquote>
+
+            <!-- Produit Final -->
+            <div class="final-product">
+                <h3>Le BookNook Sainté</h3>
+                <div class="product-container">
+                    <div class="product-showcase">
+                        <img src="photos/Rendu projet/book-nook-5.jpg" alt="Booknook terminé" class="product-image">
+                        <div class="product-features">
+                            <div class="feature">
+                                <span class="icon">⚙️</span>
+                                <span>Kit modulable et réassemblable</span>
+                            </div>
+                            <div class="feature">
+                                <span class="icon">📍</span>
+                                <span>Fabriqué localement avec Loyc Desfarges</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-specs">
+                        <h4>Caractéristiques Techniques</h4>
+                        <dl>
+                            <dt>Dimensions</dt>
+                            <dd>154mm x 216mm</dd>
+                            
+                            <dt>Matériaux</dt>
+                            <dd>Peuplier 3mm certifié PEFC<br>Nylon</dd>
+                            
+                            <dt>Éclairage</dt>
+                            <dd>LED intégrée (2 piles AA)</dd>
+                            
+                            <dt>Édition</dt>
+                            <dd>Série numérotée - 500 exemplaires</dd>
+                            
+                            <dt>Prix</dt>
+                            <dd class="price">47,90€ TTC</dd>
+                        </dl>
+                        <div class="badge">Cité du Design 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Histoire -->
+    <section id="histoire">
+        <div class="section-inner">
+            <h2>L'Histoire Industrielle de Saint-Étienne</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Événement 1 - Origines Minières -->
+                <div class="timeline-event left">
+                    <div class="event-card">
+                        <div class="event-date">XVIe siècle</div>
+                        <div class="event-icon">⚒️</div>
+                        <h3>Berceau Minier</h3>
+                        <img src="images/chevalement-noir.jpg" alt="Mines de charbon" class="event-image">
+                        <div class="event-content">
+                            <p>Début de l'exploitation charbonnière qui façonnera l'identité industrielle de la ville</p>
+                            <ul class="event-keywords">
+                                <li>Charbon</li>
+                                <li>Chevalements</li>
+                                <li>Corons</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 2 - Rubanerie -->
+                <div class="timeline-event right">
+                    <div class="event-card">
+                        <div class="event-date">1850</div>
+                        <div class="event-icon">🎗️</div>
+                        <h3>Capitale de la Passementerie</h3>
+                        <img src="images/metier-a-tisser.jpg" alt="Métiers à tisser" class="event-image">
+                        <div class="event-content">
+                            <p>Plus de 80 000 métiers à tisser produisent des rubans de soie pour le monde entier</p>
+                            <ul class="event-keywords">
+                                <li>Soie</li>
+                                <li>Innovation</li>
+                                <li>Export</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 3 - Armurerie -->
+                <div class="timeline-event left">
+                    <div class="event-card">
+                        <div class="event-date">1864</div>
+                        <div class="event-icon">⚔️</div>
+                        <h3>Manufacture d'Armes</h3>
+                        <img src="images/manufacture.png" alt="Fusils anciens" class="event-image">
+                        <div class="event-content">
+                            <p>Production d'armes militaires de renommée mondiale pendant la Révolution Industrielle</p>
+                            <ul class="event-keywords">
+                                <li>Acier</li>
+                                <li>Précision</li>
+                                <li>Ingénierie</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 4 - Transport -->
+                <div class="timeline-event right">
+                    <div class="event-card">
+                        <div class="event-date">1881</div>
+                        <div class="event-icon">🚋</div>
+                        <h3>Premier Tramway Français</h3>
+                        <img src="images/tramway.jpg" alt="Tramway historique" class="event-image">
+                        <div class="event-content">
+                            <p>Mise en service du premier réseau de tramways à vapeur en France</p>
+                            <ul class="event-keywords">
+                                <li>Mobilité</li>
+                                <li>Innovation</li>
+                                <li>Urbanisme</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 5 - Design -->
+                <div class="timeline-event left">
+                    <div class="event-card">
+                        <div class="event-date">1998</div>
+                        <div class="event-icon">🎨</div>
+                        <h3>Biennale Internationale Design</h3>
+                        <img src="images/design.jpg" alt="Biennale du design" class="event-image">
+                        <div class="event-content">
+                            <p>Reconversion industrielle vers le design et les industries créatives</p>
+                            <ul class="event-keywords">
+                                <li>Créativité</li>
+                                <li>Modernité</li>
+                                <li>Reconversion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Époque Actuelle -->
+                <div class="timeline-end">
+                    <div class="current-era">
+                        <img src="images/design-labellise.jpg" alt="Saint-Étienne moderne">
+                        <div class="era-label">Saint-Étienne<br><span>De nos jours</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="memorium" class="memorium-section">
+        <div class="section-inner">
+            <h2>Memorium - De l'idée au produit</h2>
+            
+            <div class="memorium-grid">
+                <!-- Ajoutez vos images ici -->
+                <div class="photo-cell vertical">
+                    <img src="photos/brainstorming.jpeg" alt="Brainstorming">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/machine-decoupe.png" alt="Machine découpe">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/decoupe.png" alt="Machine découpe zoom">
+                </div>
+                <div class="photo-cell vetical">
+                    <a href="https://youtube.com/shorts/pj6AvfmFV70?feature=share"><img src="photos/videos/ecran-decoupe.png" alt="Écran découpe"></a>
+                </div>
+                <div class="photo-cell vetical">
+                    <a href="https://youtube.com/shorts/IO8GDH3TKsA?feature=share"><img src="photos/videos/decoupe-vue-face.png" alt="Découpe vue de face"></a>
+                </div>
+                <div class="photo-cell vetical">
+                    <a href="https://youtube.com/shorts/PqasGAS1L4c?feature=share"><img src="photos/videos/decoupe-vue-dessus.png" alt="Découpe vue de dessus"></a>
+                </div>
+                <div class="photo-cell horizontal">
+                    <a href="https://youtu.be/_w5B--REPrk"><img src="photos/videos/decoupe-zoom.png" alt="Machine découpe zoom"></a>
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/machine-marquage.png" alt="Machine marquage">
+                </div>
+                <div class="photo-cell vertical">
+                    <a href="#"><img src="photos/videos/marquage.png" alt="Marquage"></a>
+                </div>
+                <div class="photo-cell vertical">
+                    <a href="https://youtube.com/shorts/pUpeMXbacT4?feature=share"><img src="photos/videos/assemblage.png" alt="Assemblage"></a>
+                </div>
+                <div class="photo-cell vertical">
+                    <a href="https://youtube.com/shorts/9KqPAmOZhrA?feature=share"><img src="photos/videos/assemblage-part2.png" alt="Assemblage"></a>
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/book-nook.jpg" alt="BookNook">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/book-nook-2.jpg" alt="BookNook">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/Rendu projet/book-nook-3.jpg" alt="BookNook">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/Rendu projet/book-nook-4.jpg" alt="BookNook">
+                </div>
+                <div class="photo-cell horizontal">
+                    <img src="photos/Rendu projet/book-nook-5.jpg" alt="BookNook">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/Rendu projet/book-nook-6.jpg" alt="BookNook">
+                </div>
+                <div class="photo-cell horizontal">
+                    <img src="photos/stand-3.jpg" alt="Stand">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/stand-2.jpg" alt="Stand">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/stand.jpg" alt="Stand">
+                </div>
+                <div class="photo-cell vertical">
+                    <img src="photos/introduction-expo.jpg" alt="Discours Introduction">
+                </div>
+                <div class="photo-cell horizontal">
+                    <img src="photos/explications.jpg" alt="Discours exposants">
+                </div>
+                <div class="photo-cell horizontal">
+                    <img src="photos/groupe.jpg" alt="Groupe">
+                </div>
+                <div class="photo-cell horizontal">
+                    <img src="photos/groupe-2.jpg" alt="Groupe">
+                </div>
+                <!-- Répétez pour chaque photo -->
+            </div>
+    
+            <div class="download-all">
+                <a href="https://drive.google.com/drive/folders/1Jff5L7k74LKXmr5bUb_tNZvI_1CPROYb?usp=sharing" class="download-btn" download>Télécharger tous les souvenirs (ZIP)</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="publication-section" id="publications">
+        <div class="publication-card rotate-left">
+            <h3>L'histoire de la conception du produit de A à Z</h3>
+            <img src="documents/magazine-preview.png" alt="Aperçu du livret A5">
+            <a href="documents/magazine.pdf" class="download-btn">Télécharger le livret</a>
+        </div>
+
+        <div class="publication-card rotate-right">
+            <h3>Affiches collectors</h3>
+            <img src="documents/ensemble-magazine.png" alt="Aperçu affiches A3">
+            <a href="https://drive.google.com/drive/folders/1c-9pgHOBVHC1Skchxi6yiHw8v-clS7aS?usp=sharing" class="download-btn">Télécharger en haute résolution</a>
+        </div>
+
+        <div class="publication-card rotate-left">
+            <h3>Carton d'invitation numérique</h3>
+            <img src="documents/mail-preview.png" alt="Aperçu de l'email d'invitation">
+            <a href="documents/mail.html" class="download-btn">Voir en plein écran</a>
+        </div>
+
+        <div class="publication-card rotate-right">
+            <h3>Notre vidéo de présentation</h3>
+            <img src="documents/minia-preview.png" alt="Aperçu de la vidéo">
+            <a href="documents/video.mp4" class="download-btn">Découvrir la vidéo sur YouTube</a>
+        </div>
+
+        <div class="publication-card rotate-left">
+            <h3>Notice de construction</h3>
+            <img src="documents/mode-emploi-preview.png" alt="Aperçu notice">
+            <a href="documents/noticeassemblage.pdf" class="download-btn">Télécharger la notice</a>
+        </div>
+
+        <div class="publication-card rotate-right">
+            <h3>Code du site web</h3>
+            <img src="documents/site-preview.png" alt="Aperçu site">
+            <a href="https://github.com/Viktor59000/maison-minerale" class="download-btn">Voir sur GitHub</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- Logo Télécom Saint-Étienne -->
+                <div class="logo-container">
+                    <img src="images/telecom.png" alt="Logo Télécom Saint-Étienne" class="footer-logo-img">
+                    <div class="logo-text">
+                        <span>Télécom</span>
+                        <span>Saint-Étienne</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-info">
+                <p class="project-info">Projet réalisé dans le cadre du workshop B1 "Vert'nissage"</p>
+                <div class="organizers">
+                    <p>Encadré par :</p>
+                    <ul class="organizer-list">
+                        <li>Mr Etiembre</li>
+                        <li>Mr Reymondon</li>
+                        <li>Avec l'aide de Mr Desfrages</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
